@@ -23,9 +23,9 @@ conf = SparkConf().setMaster(master).setAppName(AppName)
 
 sc = SparkContext(conf = conf)
 sql_context = SQLContext(sc)
-file_loc = "C:/Users/vpappakrishnan/Google Drive/Sites_analysis/Mat's House/power_demand_15min_11_14.csv"
+file_loc = "C:/Users/vpappakrishnan/Google Drive/.../...csv"
 
-df = sql_context.read.load("C:\Spark\examples/src/main/resources/people.json", format="json")
+df = sql_context.read.load("C:/Spark/examples/src/main/resources/people.json", format="json")
 
 # To print the column 'age'
 df.select('age').collect()
